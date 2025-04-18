@@ -1,0 +1,66 @@
+﻿@inherits LayoutComponentBase
+
+<div style="display:flex;align-self:stretch;flex-direction:column;height:100vh;justify-self:center;width:100%">
+
+    <header style="background-color:lightgrey;display:flex;justify-content:center;">
+        <div style="display:flex;max-width:1400px;width:100%;flex-direction:column">
+            <div style="display:flex;justify-content:center">ICON</div>
+            <div style="display:flex ;flex-direction:row;justify-content:space-between">
+                <div><input type="text" /></div>
+                <div>Постельное белье</div>
+                <div>Детские товары</div>
+                <div>Доставка и оплата</div>
+                <div>Опт</div>
+                <div>Дропшипинг</div>
+                <div>Контакты</div>
+                <div style="display:flex;flex-direction:row;gap:4px"><div>X</div><div>C</div><div>V</div></div>
+            </div>
+        </div>
+
+    </header>
+    <main style="display:flex;justify-content:center">
+        <section style="max-width:1400px;width:100%;border:1px solid #d0d7de">
+            @Body
+        </section>
+    </main>
+
+    <footer style="background-color:lightgrey;display:flex;justify-content:center">
+        <div style="display:flex;max-width:1400px;width:100%;justify-content:space-between">
+            <div style="display:flex;flex-direction:column">
+                <h5>ПОКУПАТЕЛЯМ</h5>
+                <div>Доставка и оплата</div>
+                <div>Дропшипинг</div>
+                <div>Опт</div>
+                <div>Контакты</div>
+            </div>
+            <div style="display:flex;flex-direction:column">
+                <h5>Контакты</h5>
+                <div>Телефон:</div>
+                <a href="tel:+123456789">Phone</a>
+                <div>Часы работы</div>
+                <div>Пн-Нд с 9 до 18</div>
+                <a mailto="email:tirotex.shop@gmail.com">Phone</a>
+            </div>
+            <div style="display:flex;flex-direction:column">
+                <h5>Мы в социальных сетях</h5>
+                <a href="mailto:tirotex.shop@gmail.com">X</a>
+                <a href="mailto:tirotex.shop@gmail.com">X</a>
+                <a href="mailto:tirotex.shop@gmail.com">X</a>
+                <a href="mailto:tirotex.shop@gmail.com">X</a>
+            </div>
+            <div style="display:flex;flex-direction:column">
+
+                <a>Войти</a>
+                <a>Зарегистрироваться</a>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
