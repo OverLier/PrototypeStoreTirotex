@@ -1,0 +1,21 @@
+﻿
+<div style="height:150px;width:350px;display:flex;flex-direction:row;gap:8px">
+    <div><img src="@Image" alt="" /></div>
+    <div>
+        <p style="font-weight:bold;font-size:15px;margin:0">@Title</p>
+        <p style="font-size:15px;line-height:1.2">
+            @Description
+        </p>
+    </div>
+</div>
+
+
+
+@code
+{
+    [Parameter] public string? Title { get; set; } = "Текст";
+    [Parameter] public string? Description { get; set; } = "Текст";
+    [Parameter] public string? Image { get; set; } = "image/home-why-05.png";
+}
+
+

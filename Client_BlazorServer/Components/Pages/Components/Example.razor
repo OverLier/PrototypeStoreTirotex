@@ -1,0 +1,46 @@
+﻿<style>
+
+
+    .card-container {
+        width:49%;
+        height: 220px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+        transition: transform 0.5s ease, filter 0.3s ease;
+    }
+
+    .card-container:hover .card-image {
+        transform: scale(1.1);
+        filter: brightness(0.5);
+    }
+
+    .card-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        padding: 0 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        z-index: 2;
+    }
+</style>
+        @* <div style="border:1px solid #d0d7de;height:240px;width:49%;display:flex;justify-content:center;align-items:center">ТЕКСТ</div> *@
+<div class="card-container">
+    <img src="image/ImageNotFound.png" alt="Постільна білизна" class="card-image">
+    <h2 class="card-title">Постільна білизна</h2>
+</div>

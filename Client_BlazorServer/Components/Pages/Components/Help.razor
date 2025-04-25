@@ -1,0 +1,136 @@
+﻿<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 550px;
+        background-color: white;
+        border: 1px solid #333;
+        border-radius: 8px;
+        padding: 25px;
+    }
+
+    .form-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 4px;
+        color: #000;
+    }
+
+    .form-subtitle {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .form-column {
+        flex: 1;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: #dce6ee;
+        font-size: 14px;
+    }
+
+    .form-textarea {
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: #dce6ee;
+        font-size: 14px;
+        resize: none;
+        margin-bottom: 15px;
+    }
+
+    .form-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .submit-button {
+        padding: 8px 20px;
+        background-color: white;
+        border: 1px solid #999;
+        border-radius: 4px;
+        color: #000;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+        .submit-button:hover {
+            background-color: #f5f5f5;
+        }
+
+    .captcha {
+        width: 40px;
+        height: 40px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<div class="form-container">
+    <h2 class="form-title">Залишились питання</h2>
+    <p class="form-subtitle">Залишіть свої дані і наш менеджер зв'яжеться з вами</p>
+
+    <div class="form-row">
+        <div class="form-column">
+            <input type="text" class="form-input" placeholder="Ваше ім'я*" required>
+        </div>
+        <div class="form-column">
+            <input type="text" class="form-input" placeholder="Ваше прізвище (необов'язково)">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-column">
+            <input type="tel" class="form-input" placeholder="+380" required>
+        </div>
+        <div class="form-column">
+            <input type="email" class="form-input" placeholder="Адреса ел.пошти (необов'язково)">
+        </div>
+    </div>
+
+    <textarea class="form-textarea" placeholder="Питання/відповідь (необов'язково)"></textarea>
+
+    <div class="form-actions">
+        <button type="submit" class="submit-button">Надіслати</button>
+        <div class="captcha">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+        </div>
+    </div>
+</div>
